@@ -1,0 +1,47 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Appraisal Scores</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Cycle</th>
+                                        <th>Self</th>
+                                        <th>Manager</th>
+                                        <th>Appraisal</th>
+                                        <th>Task</th>
+                                        <th>KPI</th>
+                                        <th>iFeel</th>
+                                        <th>Final</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <tr>
+                                        <td class="text-bold-500">First Cycle (Q1)</td>
+                                        <td>78%</td>
+                                        <td>0%</td>
+                                        <td>0%</td>
+                                        <td>0.0%</td>
+                                        <td>0%</td>
+                                        <td>0%</td>
+                                        <td><span class="badge bg-light-success">0%</span></td>
+                                          
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Self Evaluation First Appraisal</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <p>
+                            <span> <em>*Scoring Guidelines: 5 - Excellent, 4 - Very Good, 3 - Good, 2 - Average, 1 - Needs Improvement </em> </span>
+                        </p>
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Job Requirements</th>
+                                        <th>Self Score</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <tr>
+                                        <td class="text-bold-500">Execute any digital marketing related work in ongoing client engagement</td>
+                                        <td> 
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td> 
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Visualization</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Creativity</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">New skills learning</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Initiative</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr> 
+                                        <td class="text-bold-500">Media creation skills</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Communication</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Manage all digital platform of the company - website, social media, etc.</td>
+                                        <td>
+                                            <select class="form-select" id="basicSelect">
+                                                <option>---</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

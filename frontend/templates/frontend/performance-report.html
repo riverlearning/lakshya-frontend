@@ -1,0 +1,40 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Performance Report</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Average Final Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Shyam Rathod</td>
+                                        <td><span class="badge bg-light-success">78.50%</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Abhishek Borse</td>
+                                        <td><span class="badge bg-light-success">80.60%</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

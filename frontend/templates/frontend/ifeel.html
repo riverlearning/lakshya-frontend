@@ -1,0 +1,49 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">iFeel (Quick Feedbacks) </h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Feedback From</th>
+                                        <th>Feedback To</th>
+                                        <th>Date</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <tr>
+                                        <td class="text-bold-500">John Doe</td>
+                                        <td class="text-bold-500">Shyam Rathod</td>
+                                        <td class="text-bold-500">May 11,2022</td>
+                                        <td>Late for new installations</td>  
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Jenny Thomas</td>
+                                        <td class="text-bold-500">Abhishek Borse</td>
+                                        <td class="text-bold-500">May 23,2022</td>
+                                        <td>testing the app and the new components</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Hritik Roshan</td>
+                                        <td class="text-bold-500">Kangana Ranauat</td>
+                                        <td class="text-bold-500">April 13,2022</td>
+                                        <td>Lorem ipsum</td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

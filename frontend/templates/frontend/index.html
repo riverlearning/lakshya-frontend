@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'vendors/iconly/bold.css' %}">
+
+    <link rel="stylesheet" href="{% static 'vendors/perfect-scrollbar/perfect-scrollbar.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap-icons/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.svg' %}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4b3fd3fba9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <a href="{% url 'index' %}"><img src="{% static 'images/logo/logo.png' %}" alt="Logo" srcset=""></a>
+            </div>
+            <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item active ">
+                <a href="{% url 'dashboard' %}" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li
+                class="sidebar-item  active has-sub">
+                <a href="#" class='sidebar-link'>
+                    <i class="bi bi-stack"></i>
+                    <span>Masters</span>
+                </a>
+                <ul class="submenu ">
+                    <li class="submenu-item ">
+                        <a href="component-alert.html">Employees</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-badge.html">Departments</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-breadcrumb.html">Roles</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">Job Requirements (KRA)</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">Grades</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">Appraisal Cycle</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">KPI</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">KPI</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">Role JR Mapping</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">Employee JR Mapping</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li
+                class="sidebar-item  has-sub">
+                <a href="#" class='sidebar-link'>
+                    <i class="bi bi-stack"></i>
+                    <span>Task</span>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a href="{% url 'task' %}">My Tasks</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'taskAllocated' %}">Task Allocated By Me</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'taskClosed' %}">My Closed Tasks</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'taskAssess' %}">Assess Closed Tasks</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li
+                class="sidebar-item  has-sub">
+                <a href="#" class='sidebar-link'>
+                    <i class="bi bi-collection-fill"></i>
+                    <span>Assessments</span>
+                </a>
+                <ul class="submenu ">
+                    <li class="submenu-item ">
+                        <a href="{% url 'myAppraisal' %}">My Appraisal</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'myEvaluation' %}">My Evaluation</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'reportKPIData' %}">Report KPI Data</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'performanceReport' %}">Performance Report</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'kpiReport' %}">KPI Report</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'iFeel' %}">iFeel</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li
+                class="sidebar-item  has-sub">
+                <a href="#" class='sidebar-link'>
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <span>Training</span>
+                </a>
+                <ul class="submenu ">
+                    <li class="submenu-item ">
+                        <a href="{% url 'developmentGoals' %}">Development Goals</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'myTrainings' %}">My Trainings</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li
+                class="sidebar-item  has-sub">
+                <a href="#" class='sidebar-link'>
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <span>Organisation</span>
+                </a>
+                <ul class="submenu ">
+                    <li class="submenu-item ">
+                        <a href="layout-default.html">Mission</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="layout-vertical-1-column.html">Organization Chart</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="layout-vertical-navbar.html">Strategic Goals</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="layout-rtl.html">Internal Projects</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+<!-- Content  -->
+{% block content %}
+
+{% endblock %}
+<!-- End Content -->
+           
+        </div>
+    </div>
+    <script src="{% static 'vendors/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    
+<script src="{% static 'vendors/apexcharts/apexcharts.js' %}"></script>
+<script src="{% static 'js/pages/dashboard.js' %}"></script>
+
+    <script src="{% static 'js/mazer.js' %}"></script>
+</body>
+
+</html>
