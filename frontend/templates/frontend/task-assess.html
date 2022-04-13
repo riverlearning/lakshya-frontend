@@ -1,0 +1,44 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Task Allocated To Me</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Status</th>
+                                        <th>Performance</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Finish Evaluation</td>
+                                        <td><span class="badge bg-success">ASSESSED</span></td>
+                                        <td>Average</td>
+                                        <td>Not good</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">UI Redesign</td>
+                                        <td><span class="badge bg-warning">PENDING</span></td>
+                                        <td>Excellent</td>
+                                        <td>Good work></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

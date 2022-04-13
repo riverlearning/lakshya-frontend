@@ -1,0 +1,62 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Task Allocated To Me</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Allocated By</th>
+                                        <th>Allocation Date</th>
+                                        <th>Closure Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Finish Evaluation</td>
+                                        <td>Jenny Thomas</td>
+                                        <td class="text-bold-500">May 11,2021</td>
+                                        <td>May 26, 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">UI Redesign</td>
+                                        <td>Shyam Rathod</td>
+                                        <td class="text-bold-500">April 12,2022</td>
+                                        <td>April 30, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">New Theme Implementation</td>
+                                        <td>Swarali Kulkarni</td>
+                                        <td class="text-bold-500">May 12, 2022</td>
+                                        <td>April 30, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Update Lakshya App</td>
+                                        <td>Hiren</td>
+                                        <td class="text-bold-500">April 05,2022</td>
+                                        <td>April 16, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">TRAQ App</td>
+                                        <td>Yograj Shirsath</td>
+                                        <td class="text-bold-500">Feb 28, 2022</td>
+                                        <td>April 25, 2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
