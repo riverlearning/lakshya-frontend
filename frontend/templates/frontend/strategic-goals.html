@@ -1,0 +1,58 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end py-3">
+                    <a href="{% url 'createStrategy' %}" class="btn btn-primary">Create New</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Strategic Goals</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Strategic Goal</th>
+                                        <th>Description</th>
+                                        <th>Target Date</th>
+                                        <th>Created On</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Achieve a Turnover of Rs. 25 Cr. in FY 22-23</td>
+                                        <td>The organisation should achieve a sales revenue of Rs. 25 Cr. in FY 22-23</td>
+                                        <td>March 31, 2023</td>
+                                        <td>April 15, 2022</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Achieve a profitability (Net Profit) of 15%</td>
+                                        <td>Overall operating profit of the organisation should be 15%</td>
+                                        <td>March 31, 2023</td>
+                                        <td>April 15, 2022</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

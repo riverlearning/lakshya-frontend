@@ -1,0 +1,79 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Employee Table</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Employee Name</th>
+                                        <th>Department</th>
+                                        <th>Grade</th>
+                                        <th>Salary</th>
+                                        <th>Role</th>
+                                        <th>Manager Name</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Alice Cooper</td>
+                                        <td>Sales</td>
+                                        <td>B</td>
+                                        <td>30,000</td>
+                                        <td>Sales Manager</td>
+                                        <td>Dexter Creed</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Betty Cooper</td>
+                                        <td>Marketing</td>
+                                        <td>A</td>
+                                        <td>35,000</td>
+                                        <td>Marketing Head</td>
+                                        <td>Dexter Creed</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Kevin Malone</td>
+                                        <td>Accounts</td>
+                                        <td>B</td>
+                                        <td>33,000</td>
+                                        <td>Junior Accountant</td>
+                                        <td>Angela Martin</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Oscar Martinez</td>
+                                        <td>Accounts</td>
+                                        <td>B</td>
+                                        <td>45,000</td>
+                                        <td>Senior Accountant</td>
+                                        <td>Angela Martin</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

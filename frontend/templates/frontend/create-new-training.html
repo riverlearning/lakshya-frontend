@@ -1,0 +1,85 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Create New Training</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Topic</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Design principles</option>
+                                            <option>Strategic Thinking</option>
+                                            <option>Machine Learning</option>
+                                            <option>Python Advanced</option>
+                                            <option>Emotional Intelligence</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">Date</label>
+                                        <input type="text" id="date-column" class="form-control"
+                                            placeholder="Date" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Trainer</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Jerry Sams</option>
+                                            <option>Gopal Kamath</option>
+                                            <option>Elon Musk</option>
+                                            <option>Swarali Kulkarni</option>
+                                            <option>Viktor Stalin</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">Venue</label>
+                                        <input type="text" id="date-column" class="form-control"
+                                            placeholder="Venue" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">Start Time</label>
+                                        <input type="text" id="date-column" class="form-control"
+                                            placeholder="Start Time" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">End Time</label>
+                                        <input type="text" id="date-column" class="form-control"
+                                            placeholder="End Time" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    <button type="cancel" class="btn btn-light me-1 mb-1">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

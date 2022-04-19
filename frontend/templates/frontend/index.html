@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title>Lakshya</title>
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -54,28 +54,25 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="component-alert.html">Employees</a>
+                        <a href="{% url 'employees' %}">Employees</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-badge.html">Departments</a>
+                        <a href="{% url 'departments' %}">Departments</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-breadcrumb.html">Roles</a>
+                        <a href="{% url 'roles' %}">Roles</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">Job Requirements (KRA)</a>
+                        <a href="{% url 'jobRequirementsKRA' %}">Job Requirements (KRA)</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">Grades</a>
+                        <a href="{% url 'grades' %}">Grades</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">Appraisal Cycle</a>
+                        <a href="{% url 'appraisalCycle' %}">Appraisal Cycle</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">KPI</a>
-                    </li>
-                    <li class="submenu-item ">
-                        <a href="component-button.html">KPI</a>
+                        <a href="{% url 'kpi' %}">KPI</a>
                     </li>
                     <li class="submenu-item ">
                         <a href="component-button.html">Role JR Mapping</a>
@@ -122,10 +119,19 @@
                         <a href="{% url 'myEvaluation' %}">My Evaluation</a>
                     </li>
                     <li class="submenu-item ">
+                        <a href="{% url 'managerEvaluation' %}">Manager Evaluation</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'ownerEvaluation' %}">Owner Evaluation</a>
+                    </li>
+                    <li class="submenu-item ">
                         <a href="{% url 'reportKPIData' %}">Report KPI Data</a>
                     </li>
                     <li class="submenu-item ">
                         <a href="{% url 'performanceReport' %}">Performance Report</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'salaryReport' %}">Salary Report</a>
                     </li>
                     <li class="submenu-item ">
                         <a href="{% url 'kpiReport' %}">KPI Report</a>
@@ -144,6 +150,21 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
+                        <a href="{% url 'trainingAdmin' %}">Training Admin</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'trainers' %}">Trainers</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'topics' %}">Topics</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="{% url 'personWiseReport' %}">Person Wise Report</a>
+                    </li>
+                    <li class="submenu-item ">
+                        <a href="component-button.html">Monthly Training Report</a>
+                    </li>
+                    <li class="submenu-item ">
                         <a href="{% url 'developmentGoals' %}">Development Goals</a>
                     </li>
                     <li class="submenu-item ">
@@ -160,16 +181,16 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="layout-default.html">Mission</a>
+                        <a href="{% url 'mission' %}">Mission</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="layout-vertical-1-column.html">Organization Chart</a>
+                        <a href="{% url 'organizationChart' %}">Organization Chart</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="layout-vertical-navbar.html">Strategic Goals</a>
+                        <a href="{% url 'strategicGoals' %}">Strategic Goals</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="layout-rtl.html">Internal Projects</a>
+                        <a href="{% url 'internalProjects' %}">Internal Projects</a>
                     </li>
                 </ul>
             </li>

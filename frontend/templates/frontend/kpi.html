@@ -1,0 +1,94 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end py-3">
+                    <a href="{% url 'createNewKPI' %}" class="btn btn-primary">Create New</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Key Performance Indicators</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>KPI</th>
+                                        <th>Owner</th>
+                                        <th>UOM</th>
+                                        <th>Reporting Frequency</th>
+                                        <th>Favorable Direction</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Employee Satisfaction Rating</td>
+                                        <td>Betty Cooper</td>
+                                        <td>Numbers</td>
+                                        <td>Monthly</td>
+                                        <td>Increase</td>
+                                        <td>
+                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Fixing Bugs in Production</td>
+                                        <td>Jenny Thomas</td>
+                                        <td>Numbers</td>
+                                        <td>Monthly</td>
+                                        <td>Decrease</td>
+                                        <td>
+                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Growth in Revenue</td>
+                                        <td>John Doe</td>
+                                        <td>Rupee</td>
+                                        <td>Monthly</td>
+                                        <td>Increase</td>
+                                        <td>
+                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Monthly Website Traffic</td>
+                                        <td>Shyam Rathod</td>
+                                        <td>No. of visitors</td>
+                                        <td>Monthly</td>
+                                        <td>Increase</td>
+                                        <td>
+                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Understanding User Requirements</td>
+                                        <td>Abhishek Borse</td>
+                                        <td>Numbers</td>
+                                        <td>Monthly</td>
+                                        <td>Increase</td>
+                                        <td>
+                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

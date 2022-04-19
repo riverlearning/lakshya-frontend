@@ -1,0 +1,66 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Person Wise Training Report</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Name of the Person</th>
+                                        <th>Trainings Attended</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Shyam Rathod</td>
+                                        <td>5</td>
+                                        <td>5:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Abhishek Borse</td>
+                                        <td>15</td>
+                                        <td>8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Swarali Kulkarni</td>
+                                        <td>1</td>
+                                        <td>1:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Ritwik Hattarki</td>
+                                        <td>1</td>
+                                        <td>00:15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">John Cena</td>
+                                        <td>11</td>
+                                        <td>5:30:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Javier Bardem</td>
+                                        <td>2</td>
+                                        <td>2:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Johnny Depp</td>
+                                        <td>30</td>
+                                        <td>30:00:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

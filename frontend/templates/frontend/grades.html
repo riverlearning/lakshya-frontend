@@ -1,0 +1,64 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end py-3">
+                    <a href="{% url 'createNewGrade' %}" class="btn btn-primary">Create new</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Grades</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Grade</th>
+                                        <th>Start Salary</th>
+                                        <th>End Salary</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>50,000</td>
+                                        <td>95,000</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>35,000</td>
+                                        <td>45,000</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>20,000</td>
+                                        <td>30,000</td>
+                                        <td>
+                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

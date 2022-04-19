@@ -1,0 +1,162 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Create New Appraisal Cycle</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Strategic Goal</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Achieve a Turnover of Rs. 25 Cr. in FY 22-23</option>
+                                            <option>Achieve a profitability (Net Profit) of 15%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">KPI</label>
+                                        <input type="text" id="first-name-column" class="form-control"
+                                            placeholder="KPI" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="last-name-column">Description</label>
+                                        <input type="text" id="last-name-column" class="form-control"
+                                            placeholder="Description" name="lname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Owner</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Betty Cooper</option>
+                                            <option>Jenny Thomas</option>
+                                            <option>John Doe</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>Abhishek Borse</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="last-name-column">Unit Of Measurement</label>
+                                        <input type="text" id="last-name-column" class="form-control"
+                                            placeholder=" " name="lname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Favorable Direction</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Increase</option>
+                                            <option>Decrease</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">KPI Type</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Manual</option>
+                                            <option>System</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Weightage</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Targets</label>
+                                        <input type="number" id="kpi-jan" class="form-control"
+                                            placeholder="JAN" name="jan" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-feb" class="form-control"
+                                            placeholder="FEB" name="feb" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-mar" class="form-control"
+                                            placeholder="MAR" name="mar" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column"> </label>
+                                        <input type="number" id="kpi-apr" class="form-control"
+                                            placeholder="APR" name="apr" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-may" class="form-control"
+                                            placeholder="MAY" name="may" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-jun" class="form-control"
+                                            placeholder="JUN" name="jun" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input type="number" id="kpi-jul" class="form-control"
+                                            placeholder="JUL" name="jul" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-aug" class="form-control"
+                                            placeholder="AUG" name="aug" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-sep" class="form-control"
+                                            placeholder="SEP" name="sep" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input type="number" id="kpi-oct" class="form-control"
+                                            placeholder="OCT" name="oct" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-nov" class="form-control"
+                                            placeholder="NOV" name="nov" min="0" step="0.01" required>
+                                        <input type="number" id="kpi-dec" class="form-control"
+                                            placeholder="DEC" name="dec" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-check">
+                                        <div class="checkbox">
+                                            <label for="city-column">Active</label>
+                                            <input type="checkbox" id="checkbox1" class="form-check-input" checked>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    <button type="cancel" class="btn btn-light me-1 mb-1">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

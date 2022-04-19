@@ -1,0 +1,61 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section class="list-group-navigation">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Mission</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="list-group" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" id="list-vision-list"
+                                        data-bs-toggle="list" href="#list-vision" role="tab">Vision</a>
+                                    <a class="list-group-item list-group-item-action" id="list-goals-list"
+                                        data-bs-toggle="list" href="#list-goals" role="tab">Goals</a>
+                                    <a class="list-group-item list-group-item-action" id="list-values-list"
+                                        data-bs-toggle="list" href="#list-values" role="tab">Values</a>
+                                    <a class="list-group-item list-group-item-action" id="list-quality-policy-list"
+                                        data-bs-toggle="list" href="#list-quality-policy" role="tab">Quality Policy</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-8 mt-1">
+                                <div class="tab-content text-justify" id="nav-tabContent">
+                                    <div class="tab-pane show active" id="list-vision" role="tabpanel"
+                                        aria-labelledby="list-vision-list">
+                                        To accelerate the world’s transition to sustainable energy.
+                                    </div>
+                                    <div class="tab-pane" id="list-goals" role="tabpanel"
+                                        aria-labelledby="list-goals-list">
+                                        Tesla focuses on enhancing the use of sustainable energy throughout
+                                        the globe, so it’s no surprise that its mission statement reflects this.
+                                    </div>
+                                    <div class="tab-pane" id="list-values" role="tabpanel"
+                                        aria-labelledby="list-values-list">
+                                        TED’s mission statement is simple, which makes it stand out on this list.
+                                        While you might find it ironic that a media organization that hosts hours
+                                        of content would stick to a two word mission statement, it actually fits
+                                        with their branding.
+                                    </div>
+                                    <div class="tab-pane" id="list-quality-policy" role="tabpanel"
+                                        aria-labelledby="list-quality-policy-list">
+                                        This kind of rapid-fire idea sharing is what makes TED such a lasting
+                                        presence in American and global culture.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- List group navigation ends -->
+</div>
+{% endblock %}

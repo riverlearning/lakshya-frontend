@@ -1,0 +1,71 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Employee Salary Report</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Table with outer spacing -->
+                        <div class="table-responsive">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Department</th>
+                                        <th>Role</th>
+                                        <th>Grade</th>
+                                        <th>Start Salary</th>
+                                        <th>End Salary</th>
+                                        <th>Employee Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Lois Lane</td>
+                                        <td>Marketing</td>
+                                        <td>Marketing Head</td>
+                                        <td>A</td>
+                                        <td><span class="badge bg-light-primary">₹50,000</span></td>
+                                        <td><span class="badge bg-light-success">₹70,000</span></td>
+                                        <td><span class="badge bg-light-warning">₹50,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Clark Kent</td>
+                                        <td>Journalist</td>
+                                        <td>Junior Journalist</td>
+                                        <td>A</td>
+                                        <td><span class="badge bg-light-primary">₹25,000</span></td>
+                                        <td><span class="badge bg-light-success">₹35,000</span></td>
+                                        <td><span class="badge bg-light-warning">₹25,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Bruce Wayne</td>
+                                        <td>IT</td>
+                                        <td>IT Head</td>
+                                        <td>A</td>
+                                        <td><span class="badge bg-light-primary">₹60,000</span></td>
+                                        <td><span class="badge bg-light-success">₹70,000</span></td>
+                                        <td><span class="badge bg-light-warning">₹60,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Barry Allen</td>
+                                        <td>Supply Chain & Logistics</td>
+                                        <td>Department Head</td>
+                                        <td>A</td>
+                                        <td><span class="badge bg-light-primary">₹55,000</span></td>
+                                        <td><span class="badge bg-light-success">₹75,000</span></td>
+                                        <td><span class="badge bg-light-warning">₹55,000</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

@@ -2,16 +2,17 @@
 {% load static %}
 
 {% block content%}
-        <div class="col-12 col-md-12">
+    <div class="row" id="table-hover-row">
+         <div class="col-12">
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Development Goals</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Goal</th>
@@ -122,5 +123,6 @@
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
 {% endblock %}
