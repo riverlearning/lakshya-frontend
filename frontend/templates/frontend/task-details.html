@@ -1,0 +1,130 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Task Details</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- table hover -->
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Allocated By</th>
+                                        <th>Allocation Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Close the evaluation on priority and the appraisal cycle</td>
+                                        <td>Jenny Thomas</td>
+                                        <td>May 11,2021</td>
+                                        <td><span class="badge bg-success">CLOSED</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Comments</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- table hover -->
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Progress Update</th>
+                                        <th>Date</th>
+                                        <th>By</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>In process</td>
+                                        <td>May 15,2021</td>
+                                        <td>John Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evaluation done</td>
+                                        <td>May 17,2021</td>
+                                        <td>John Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Appraisal cycle closed</td>
+                                        <td>May 21,2021</td>
+                                        <td>John Doe</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row match-height">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Task Assessment</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <!-- table hover -->
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Assessment Score</th>
+                                            <th>Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>good job</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Closing Date</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <!-- table hover -->
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th
+                                                <div style="color:#38a353; font-size:20px"><strong>May 21, 2021</strong></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

@@ -4,20 +4,31 @@
 {% block content%}
 <section id="multiple-column-form">
     <div class="row match-height">
-        <div class="col-6">
+        <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Create New Department</h4>
+                    <h4 class="card-title">Update Job Requirement</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
                         <form class="form">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-md-6 col-12">
                                     <div class="form-group">
-                                        <label for="last-name-column">Department Name</label>
-                                        <input type="text" id="last-name-column" class="form-control"
-                                            placeholder="Department Name" name="lname-column">
+                                        <label for="first-name-column">Requirements</label>
+                                        <input type="text" id="first-name-column" class="form-control"
+                                            placeholder="Requirements" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Skill Area</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Technical</option>
+                                            <option>Behavioural</option>
+                                            <option>Functional</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">

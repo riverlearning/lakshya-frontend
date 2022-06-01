@@ -1,0 +1,75 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Role - Job Requirement (KRA)</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Search Role</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Junior Developer</option>
+                                            <option>Senior Web Developer</option>
+                                            <option>Sales Co-ordinator</option>
+                                            <option>Sales Manager</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                        <a href="{% url 'editJobRequirement' %}" class="btn btn-info me-1 mb-1">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-body">
+                    <!-- table hover -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Job Requirement (KRA)</th>
+                                    <th>Skill Area</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Forntend Developer</td>
+                                    <td>Technical</td>
+                                </tr>
+                                <tr>
+                                    <td>Decision Making</td>
+                                    <td>Behavioural</td>
+                                </tr>
+                                <tr>
+                                    <td>T3</td>
+                                    <td>Functional</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

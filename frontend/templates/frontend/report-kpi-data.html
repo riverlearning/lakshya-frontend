@@ -1,0 +1,57 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Key Performance Indicators</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- table hover -->
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>KPI</th>
+                                        <th>UOM</th>
+                                        <th>Direction</th>
+                                        <th>Month</th>
+                                        <th>Target</th>
+                                        <th>Actual Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-500">Employee Satisfaction Rating</td>
+                                        <td>Numbers</td>
+                                        <td>Increase</td>
+                                        <td>Apr, 2022</td>
+                                        <td>10.0</td>
+                                        <div class="form-group">
+                                            <td><input type="number" class="form-control" id="basicInput" placeholder=" "></td>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Growth in Revenue</td>
+                                        <td>Rupee</td>
+                                        <td>Increase</td>
+                                        <td>Apr, 2022</td>
+                                        <td>10.0</td>
+                                        <div class="form-group">
+                                            <td><input type="number" class="form-control" id="basicInput" placeholder=" "></td>
+                                        </div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

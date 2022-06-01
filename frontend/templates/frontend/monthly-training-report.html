@@ -1,0 +1,114 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Monthly Training Report</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Search Employee Name</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                            <option>May</option>
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>October</option>
+                                            <option>November</option>
+                                            <option>December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="search" class="btn btn-primary me-1 mb-1">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-body">
+                    <!-- table hover -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Trainer</th>
+                                    <th>Date</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Venue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-bold-500">Design principles</td>
+                                    <td class="text-bold-500">Jerry Sams</td>
+                                    <td>April 25, 2022</td>
+                                    <td>11:00 am</td>
+                                    <td>01:00 pm</td>
+                                    <td>At Office</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Strategic Thinking</td>
+                                    <td class="text-bold-500">Gopal Kamath</td>
+                                    <td>April 15, 2022</td>
+                                    <td>10:00 am</td>
+                                    <td>12:00 pm</td>
+                                    <td>Online</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Machine Learning</td>
+                                    <td class="text-bold-500">Elon Musk</td>
+                                    <td>April 13, 2022</td>
+                                    <td>04:00 am</td>
+                                    <td>05:30 pm</td>
+                                    <td>Cisco Webinar</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Python Advanced</td>
+                                    <td class="text-bold-500">Swarali Kulkarni</td>
+                                    <td>April 28, 2022</td>
+                                    <td>11:00 am</td>
+                                    <td>01:00 pm</td>
+                                    <td>At Office</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Emotional Intelligence</td>
+                                    <td class="text-bold-500">Jerry</td>
+                                    <td>April 28, 2022</td>
+                                    <td>04:00 am</td>
+                                    <td>05:00 pm</td>
+                                    <td>Online</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

@@ -2,6 +2,41 @@
 {% load static %}
 
 {% block content%}
+        <div class="col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 mb-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Target End Date</label>
+                                        <input type="date" name="target_end" value="2022-05-10" 
+                                        class="form-control dateinput calendar" placeholder="Select a date" 
+                                        id="id_target_end">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Status</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>OPEN</option>
+                                            <option>IN PROGRESS</option>
+                                            <option>WAITING</option>
+                                            <option>CLOSED</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
         <div class="col-12 col-md-12">
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-end py-3">
@@ -14,9 +49,9 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Task</th>
@@ -29,15 +64,18 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-bold-500">Finish Evaluation</td>
+                                        <td><a href="{% url 'taskDetails' %}" class="text-bold-500">Finish Evaluation</td>
                                         <td>Jenny Thomas</td>
                                         <td class="text-bold-500">May 11,2021</td>
                                         <td>May 26, 2021</td>
                                         <td><span class="badge bg-success">CLOSED</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'editTasksAllocated' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'addComment' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"><i class="bi bi-chat-left"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -47,9 +85,12 @@
                                         <td>April 30, 2022</td>
                                         <td><span class="badge bg-primary">OPEN</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'editTasksAllocated' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'addComment' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"><i class="bi bi-chat-left"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -59,9 +100,12 @@
                                         <td>April 30, 2022</td>
                                         <td><span class="badge bg-primary">OPEN</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'editTasksAllocated' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'addComment' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"><i class="bi bi-chat-left"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -71,9 +115,12 @@
                                         <td>April 16, 2022</td>
                                         <td><span class="badge bg-warning">IN PROGRESS</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'editTasksAllocated' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'addComment' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"><i class="bi bi-chat-left"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -83,9 +130,12 @@
                                         <td>April 25, 2022</td>
                                         <td><span class="badge bg-danger">WAITING</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'editTasksAllocated' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'addComment' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"><i class="bi bi-chat-left"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>

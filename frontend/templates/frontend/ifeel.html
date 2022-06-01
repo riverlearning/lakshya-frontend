@@ -2,6 +2,63 @@
 {% load static %}
 
 {% block content%}
+        <div class="col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="email-id-column">From</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>Ritwik Hattarki</option>
+                                            <option>John Doe</option>
+                                            <option>Abhishek Borse</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Start Date</label>
+                                        <input type="date" name="target_end" value="2022-05-10" 
+                                        class="form-control dateinput calendar" placeholder="Select a date" 
+                                        id="id_target_end">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="email-id-column">End Date</label>
+                                        <input type="date" name="target_end" value="2022-05-10" 
+                                        class="form-control dateinput calendar" placeholder="Select a date" 
+                                        id="id_target_end">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Date Range</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Today</option>
+                                            <option>Yesterday</option>
+                                            <option>Past 7 days</option>
+                                            <option>This Month</option>
+                                            <option>This Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-12 col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -9,9 +66,9 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Feedback From</th>

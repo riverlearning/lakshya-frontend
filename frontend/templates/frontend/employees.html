@@ -2,6 +2,32 @@
 {% load static %}
 
 {% block content%}
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-12 mb-6">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Status</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>ACTIVE</option>
+                                            <option>INACTIVE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-12 col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -9,9 +35,9 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Employee Name</th>
@@ -32,7 +58,8 @@
                                         <td>Sales Manager</td>
                                         <td>Dexter Creed</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'updateEmployee' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -43,7 +70,8 @@
                                         <td>Marketing Head</td>
                                         <td>Dexter Creed</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'updateEmployee' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -54,7 +82,8 @@
                                         <td>Junior Accountant</td>
                                         <td>Angela Martin</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'updateEmployee' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -65,7 +94,8 @@
                                         <td>Senior Accountant</td>
                                         <td>Angela Martin</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'updateEmployee' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>

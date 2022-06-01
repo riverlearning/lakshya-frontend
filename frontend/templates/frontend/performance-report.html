@@ -3,24 +3,15 @@
 
 {% block content%}
         <div class="col-12 col-md-12">
-            <div class="row">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Assessment</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Performance Report</li>
-                    </ol>
-                </nav>
-            </div>
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Performance Report</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Name</th>
@@ -29,12 +20,12 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-bold-500">Shyam Rathod</td>
-                                        <td><span class="badge bg-light-success">78.50%</span>
+                                        <td><a href="{% url 'appraisalReport' %}" class="text-bold-500">Shyam Rathod</a></td>
+                                        <td><span class="badge bg-light-success">76.84%</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-bold-500">Abhishek Borse</td>
+                                        <td><a href="{% url 'appraisalReport' %}" class="text-bold-500">Abhishek Borse</a></td>
                                         <td><span class="badge bg-light-success">80.60%</span>
                                         </td>
                                     </tr>

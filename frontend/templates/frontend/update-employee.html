@@ -1,0 +1,159 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Update Employee</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">First Name</label>
+                                        <input type="text" id="first-name-column" class="form-control"
+                                            placeholder="First Name" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="last-name-column">Last Name</label>
+                                        <input type="text" id="last-name-column" class="form-control"
+                                            placeholder="Last Name" name="lname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="last-name-column">Phone</label>
+                                        <input type="number" id="phone-column" class="form-control"
+                                            placeholder="Phone" name="phone-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-check">
+                                        <div class="checkbox">
+                                            <label for="city-column">Active</label>
+                                            <input type="checkbox" id="checkbox1" class="form-check-input" checked>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="grade-column">Grade</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>A+</option>
+                                            <option>A</option>
+                                            <option>B+</option>
+                                            <option>B</option>
+                                            <option>C+</option>
+                                            <option>C</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="department-column">Department</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Sales</option>
+                                            <option>Marketing</option>
+                                            <option>Accounts</option>
+                                            <option>IT</option>
+                                            <option>HR</option>
+                                            <option>Supply Chain & Logistics</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="last-name-column">Salary</label>
+                                        <input type="number" id="salary-column" class="form-control"
+                                            placeholder="" name="salary-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="role-column">Role</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Junior Developer</option>
+                                            <option>Senior Web Developer</option>
+                                            <option>Sales Co-ordinator</option>
+                                            <option>Sales Manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="role-column">Category</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Owner</option>
+                                            <option>Department Head</option>
+                                            <option>Team Member</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-check">
+                                        <div class="checkbox">
+                                            <label for="city-column">Key Employee</label>
+                                            <input type="checkbox" id="checkbox1" class="form-check-input" checked>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="successor-column">Successor</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Betty Cooper</option>
+                                            <option>Jenny Thomas</option>
+                                            <option>John Doe</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>Abhishek Borse</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="successor-column">Target Next Role</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Junior Developer</option>
+                                            <option>Senior Web Developer</option>
+                                            <option>Sales Co-ordinator</option>
+                                            <option>Sales Manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Target Date</label>
+                                        <input type="date" name="target_end" value="2022-05-10" 
+                                        class="form-control dateinput calendar" placeholder="Select a date" 
+                                        id="id_target_end">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                <button type="cancel" class="btn btn-light me-1 mb-1">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

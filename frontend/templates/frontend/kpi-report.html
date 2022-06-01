@@ -1,0 +1,240 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+    <div class="row match-height">
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <fieldset class="form-group">
+                            <label for="name-column">Owner</label>
+                            <select class="choices form-select" multiple="multiple">
+                                <option value="name">Shyam Rathod</option>
+                                <option value="name">Ritwik Hattarki</option>
+                                <option value="name">Swarali Kulkarni</option>
+                                <option value="name">Abhishek Borse</option>
+                                <option value="name">John Doe</option>
+                                <option value="name">Clark Kent</option>
+                                <option value="name">Mukesh Ambani</option>
+                                <option value="name">Bruce Wayne</option>
+                                <option value="name">Lois Lane</option>
+                                <option value="name">Elon Musk</option>
+                                <option value="name">Peter Griffin</option>
+                                <option value="name">Joe Swanson</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name-column">KPI</label>
+                            <select class="choices form-select" multiple="multiple">
+                                <option value="text">Employee Satisfaction Rating</option>
+                                <option value="text">Fixing Bugs in Production</option>
+                                <option value="text">Growth in Revenue</option>
+                                <option value="text">Monthly Website Traffic</option>
+                                <option value="text">Understanding User Requirements</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name-column">Months</label>
+                            <select class="choices form-select" multiple="multiple">
+                                <option value="january">JAN</option>
+                                <option value="february" selected>FEB</option>
+                                <option value="march">MAR</option>
+                                <option value="april">APR</option>
+                                <option value="may">MAY</option>
+                                <option value="june" selected>JUN</option>
+                                <option value="july">JUL</option>
+                                <option value="august">AUG</option>
+                                <option value="september" selected>SEP</option>
+                                <option value="october">OCT</option>
+                                <option value="november">NOV</option>
+                                <option value="december">DEC</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name-column">Year</label>
+                            <select class="choices form-select" multiple="multiple">
+                                <option value="year">2020</option>
+                                <option value="year">2021</option>
+                                <option value="year" selected>2022</option>
+                                <option value="year">2023</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Key Performance Indicators</h4>
+            </div>
+            <div class="card-content">
+                <div class="card-body">
+                    <!-- table hover -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Owner</th>
+                                    <th>KPI</th>
+                                    <th>UOM</th>
+                                    <th class="col-2" colspan="2" style="background-color: rgb(255, 255, 255); text-align: center; height: 49px;">JAN</th>
+                                    <th class="col-2" colspan="2" style="background-color: rgb(255, 255, 255); text-align: center; height: 49px;">FEB</th>
+                                    <th class="col-2" colspan="2" style="background-color: rgb(255, 255, 255); text-align: center; height: 49px;">MAR</th>
+                                    <th class="col-2" colspan="2" style="background-color: rgb(255, 255, 255); text-align: center; height: 49px;">APR</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-bold-500">Ritwik Hattarki</td>
+                                    <td>Employee Satisfaction Rating</td>
+                                    <td>Numbers</td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">6.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">7.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">5.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">9.0</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Swarali Kulkarni</td>
+                                    <td>Fixing Bugs in Production</td>
+                                    <td>Numbers</td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">8.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">8.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">9.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#37a80b; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Abhishek Borse</td>
+                                    <td>Growth in Revenue</td>
+                                    <td>Rupee</td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#37a80b; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">4.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">7.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">9.0</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-bold-500">Shyam Rathod</td>
+                                    <td>Monthly Website Traffic</td>
+                                    <td>Rupee</td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">7.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">6.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#f60101; font-weight:500; text-align:center">9.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#0197f6; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                    <td class="col-1" style="height: 53px;">
+                                        <div style="color:#37a80b; font-weight:500; text-align:center">10.0</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

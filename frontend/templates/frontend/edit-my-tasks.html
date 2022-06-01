@@ -7,49 +7,36 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Create New Appraisal Cycle</h4>
+                    <h4 class="card-title">Update Task</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <p>
-                            <span><em>*Please close previous appraisal cycle before creating a new one.</em></span>
-                        </p>
-                        <p>
-                            <span><em>*Please make sure all the employees are mapped to their JR's before creating a new cycle.</em></span>
-                        </p>
                         <form class="form">
                             <div class="row">
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
-                                        <label for="first-name-column">Cycle Name</label>
+                                        <label for="first-name-column">Task</label>
                                         <input type="text" id="first-name-column" class="form-control"
-                                            placeholder="Cycle Name" name="fname-column">
+                                            placeholder="Task Name" name="fname-column">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
-                                        <label for="city-column">Status</label>
+                                        <label for="last-name-column">Description</label>
+                                        <input type="text" id="last-name-column" class="form-control"
+                                            placeholder="Description" name="lname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Status</label>
                                         <select class="form-select" id="basicSelect">
                                             <option>---</option>
                                             <option>OPEN</option>
+                                            <option>IN PROGRESS</option>
+                                            <option>WAITING</option>
                                             <option>CLOSED</option>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="last-name-column">Start Date</label>
-                                        <input type="date" name="start_end" value="2022-05-10" 
-                                        class="form-control dateinput calendar" placeholder="Select a date" 
-                                        id="id_target_end">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="last-name-column">End Date</label>
-                                        <input type="date" name="target_end" value="2022-05-10" 
-                                        class="form-control dateinput calendar" placeholder="Select a date" 
-                                        id="id_target_end">
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">

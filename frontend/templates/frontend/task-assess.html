@@ -2,6 +2,32 @@
 {% load static %}
 
 {% block content%}
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-12 mb-6">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Status</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>ASSESSED</option>
+                                            <option>PENDING</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-12 col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -9,9 +35,9 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Task</th>
@@ -23,43 +49,43 @@
                                 <tbody>
                                     <tr>
                                         <td class="text-bold-500">Finish Evaluation</td>
-                                        <td><span class="badge bg-success">ASSESSED</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-success">ASSESSED</a></td>
                                         <td>Average</td>
                                         <td>Not good</td>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">Update Lakshya App</td>
-                                        <td><span class="badge bg-success">ASSESSED</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-success">ASSESSED</a></td>
                                         <td>Very Good</td>
                                         <td>Good job done.</td>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">UI Redesign</td>
-                                        <td><span class="badge bg-warning">PENDING</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-warning">PENDING</a></td>
                                         <td>-</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">Traq app development</td>
-                                        <td><span class="badge bg-warning">PENDING</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-warning">PENDING</a></td>
                                         <td>-</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">Lakshya web app new UI</td>
-                                        <td><span class="badge bg-warning">PENDING</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-warning">PENDING</a></td>
                                         <td>-</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">Hiring interns</td>
-                                        <td><span class="badge bg-warning">PENDING</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-warning">PENDING</a></td>
                                         <td>-</td>
                                         <td>-</td>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">Party</td>
-                                        <td><span class="badge bg-warning">PENDING</span></td>
+                                        <td><a href="{% url 'assessClosedTasks' %}" class="badge bg-warning">PENDING</a></td>
                                         <td>-</td>
                                         <td>-</td>
                                     </tr>

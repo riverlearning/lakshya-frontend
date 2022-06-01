@@ -2,6 +2,44 @@
 {% load static %}
 
 {% block content%}
+        <div class="col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 mb-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Owner</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>Ritwik Hattarki</option>
+                                            <option>John Doe</option>
+                                            <option>Abhishek Borse</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Status</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>ACTIVE</option>
+                                            <option>INACTIVE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-12 col-md-12">
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-end py-3">
@@ -14,9 +52,9 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>KPI</th>
@@ -35,8 +73,10 @@
                                         <td>Monthly</td>
                                         <td>Increase</td>
                                         <td>
-                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="{% url 'kpiData' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="View KPI Data"><i class="bi bi-check"></i></a>
+                                            <a href="{% url 'updateKPI' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -46,8 +86,10 @@
                                         <td>Monthly</td>
                                         <td>Decrease</td>
                                         <td>
-                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="View KPI Data"><i class="bi bi-check"></i></a>
+                                            <a href="{% url 'updateKPI' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -57,8 +99,10 @@
                                         <td>Monthly</td>
                                         <td>Increase</td>
                                         <td>
-                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="View KPI Data"><i class="bi bi-check"></i></a>
+                                            <a href="{% url 'updateKPI' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -68,8 +112,10 @@
                                         <td>Monthly</td>
                                         <td>Increase</td>
                                         <td>
-                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="View KPI Data"><i class="bi bi-check"></i></a>
+                                            <a href="{% url 'updateKPI' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -79,8 +125,10 @@
                                         <td>Monthly</td>
                                         <td>Increase</td>
                                         <td>
-                                            <a class="badge bg-info"><i class="bi bi-file"></i></a>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="View KPI Data"><i class="bi bi-check"></i></a>
+                                            <a href="{% url 'updateKPI' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>

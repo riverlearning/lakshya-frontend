@@ -75,10 +75,10 @@
                         <a href="{% url 'kpi' %}">KPI</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">Role JR Mapping</a>
+                        <a href="{% url 'roleJRMapping' %}">Role JR Mapping</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">Employee JR Mapping</a>
+                        <a href="{% url 'employeeJRMapping' %}">Employee JR Mapping</a>
                     </li>
                 </ul>
             </li>
@@ -86,7 +86,7 @@
             <li
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
-                    <i class="bi bi-stack"></i>
+                    <i class="bi bi-pen-fill"></i>
                     <span>Task</span>
                 </a>
                 <ul class="submenu">
@@ -108,7 +108,7 @@
             <li
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
-                    <i class="bi bi-collection-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                     <span>Assessments</span>
                 </a>
                 <ul class="submenu ">
@@ -145,7 +145,7 @@
             <li
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
-                    <i class="bi bi-grid-1x2-fill"></i>
+                    <i class="bi bi-calendar-fill"></i>
                     <span>Training</span>
                 </a>
                 <ul class="submenu ">
@@ -162,7 +162,7 @@
                         <a href="{% url 'personWiseReport' %}">Person Wise Report</a>
                     </li>
                     <li class="submenu-item ">
-                        <a href="component-button.html">Monthly Training Report</a>
+                        <a href="{% url 'monthlyTrainingReport' %}">Monthly Training Report</a>
                     </li>
                     <li class="submenu-item ">
                         <a href="{% url 'developmentGoals' %}">Development Goals</a>

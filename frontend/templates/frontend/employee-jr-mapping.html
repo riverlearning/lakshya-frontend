@@ -1,0 +1,100 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Employee - Job Requirement (KRA)</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Search Employee Name</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>Ritwik Hattarki</option>
+                                            <option>Swarali Kulkarni</option>
+                                            <option>Abhishek Borse</option>
+                                            <option>John Doe</option>
+                                            <option>Clark Kent</option>
+                                            <option>Mukesh Ambani</option>
+                                            <option>Bruce Wayne</option>
+                                            <option>Lois Lane</option>
+                                            <option>Elon Musk</option>
+                                            <option>Peter Griffin</option>
+                                            <option>Joe Swanson</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="search" class="btn btn-light-primary me-1 mb-1">Search</button>
+                                        <a href="{% url 'addJobRequirement' %}" class="btn btn-info me-1 mb-1">Add</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-body">
+                    <!-- table hover -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Job Requirement (KRA)</th>
+                                    <th>Skill Area</th>
+                                    <th>Weightage</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Forntend Developer</td>
+                                    <td>Technical</td>
+                                    <td>5</td>
+                                    <td>
+                                        <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Decision Making</td>
+                                    <td>Behavioural</td>
+                                    <td>10</td>
+                                    <td>
+                                        <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>T3</td>
+                                    <td>Functional</td>
+                                    <td>1</td>
+                                    <td>
+                                        <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
+                                        <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

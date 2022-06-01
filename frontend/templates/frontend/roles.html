@@ -14,9 +14,9 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <!-- Table with outer spacing -->
+                        <!-- table hover -->
                         <div class="table-responsive">
-                            <table class="table table-lg">
+                            <table class="table table-hover mb-0">
                                 <thead>
                                     <tr>
                                         <th>Role</th>
@@ -29,32 +29,40 @@
                                         <td>Junior Developer</td>
                                         <td>C</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'updateRole' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Senior Web Developer</td>
                                         <td>A</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'updateRole' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Sales Co-ordinator</td>
                                         <td>B</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'updateRole' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Sales Manager</td>
                                         <td>A</td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'updateRole' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Delete"><i class="bi bi-trash"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>
