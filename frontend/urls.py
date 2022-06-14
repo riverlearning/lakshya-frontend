@@ -71,4 +71,11 @@ urlpatterns = [
     path('add-job-requirement', views.addJobRequirement, name="addJobRequirement"),
     path('enroll', views.enroll, name="enroll"),
     path('training-feedback', views.trainingFeedback, name="trainingFeedback"),
+    path('edit-employee-job-requirement', views.editEmployeeJobRequirement, name="editEmployeeJobRequirement"),
+    path('update-training', views.updateTraining, name="updateTraining"),
+    path('update-trainer', views.updateTrainer, name="updateTrainer"),
+    path('update-topic', views.updateTopic, name="updateTopic"),
+    path('create-new-development-goal', views.createNewDevelopmentGoal, name="createNewDevelopmentGoal"),
+    path('update-development-goal', views.updateDevelopmentGoal, name="updateDevelopmentGoal"),
+    path('add-comment-development-goal', views.addCommentDevelopmentGoal, name="addCommentDevelopmentGoal"),
 ]

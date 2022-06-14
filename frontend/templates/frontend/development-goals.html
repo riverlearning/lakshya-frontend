@@ -4,6 +4,11 @@
 {% block content%}
     <div class="row" id="table-hover-row">
          <div class="col-12">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end py-3">
+                    <a href="{% url 'createNewDevelopmentGoal' %}" class="btn btn-primary">Create new</a>
+                </div>
+            </div>
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Development Goals</h4>
@@ -11,6 +16,7 @@
                 <div class="card-content">
                     <div class="card-body">
                         <!-- table hover -->
+                        <!-- Button trigger for danger theme modal -->
                         <div class="table-responsive">
                             <table class="table table-hover mb-0">
                                 <thead>
@@ -31,12 +37,43 @@
                                         <td>Jenny Thomas</td>
                                         <td>Abhishek Borse</td>
                                         <td>April 25,2022</td>
-                                        <td><span class="badge bg-primary">OPEN</span></td>
+                                        <td><span class="badge bg-danger">WAITING</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
+                                        <!--Danger theme Modal -->
+                                        <div class="modal fade text-left" id="danger" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"
+                                            role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger">
+                                                    <h5 class="modal-title white" id="myModalLabel120">Are you sure you want to delete?
+                                                    </h5>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <i data-feather="x"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-light-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                        <span class="d-none d-sm-block">No</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger ml-1"
+                                                        data-bs-dismiss="modal">
+                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                        <span class="d-none d-sm-block">Yes</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </tr>
                                     <tr>
                                         <td class="text-bold-500">Review Meeting</td>
@@ -46,9 +83,12 @@
                                         <td>April 12,2022</td>
                                         <td><span class="badge bg-success">CLOSED</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -59,9 +99,12 @@
                                         <td>April 20,2022</td>
                                         <td><span class="badge bg-primary">OPEN</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -72,9 +115,12 @@
                                         <td>April 13,2022</td>
                                         <td><span class="badge bg-primary">OPEN</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -85,9 +131,12 @@
                                         <td>April 20,2022</td>
                                         <td><span class="badge bg-success">CLOSED</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -98,9 +147,12 @@
                                         <td>Feb 28,2022</td>
                                         <td><span class="badge bg-success">CLOSED</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -109,11 +161,14 @@
                                         <td>Gopal Kamath</td>
                                         <td>Yograj Shirsath</td>
                                         <td>April 30,2022</td>
-                                        <td><span class="badge bg-primary">OPEN</span></td>
+                                        <td><span class="badge bg-warning">IN PROGRESS</span></td>
                                         <td>
-                                            <a class="badge bg-primary"><i class="bi bi-pen"></i></a>
-                                            <a class="badge bg-danger"><i class="bi bi-trash"></i></a>
-                                            <a class="badge bg-info"><i class="bi bi-chat-left"></i></a>
+                                            <a href="{% url 'updateDevelopmentGoal' %}" class="badge bg-primary" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                            <a href="{% url 'addCommentDevelopmentGoal' %}" class="badge bg-info"><i class="bi bi-chat-left" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Comment"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>

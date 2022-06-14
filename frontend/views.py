@@ -205,3 +205,24 @@ def enroll(request):
 def trainingFeedback(request):
     return render(request, 'frontend/training-feedback.html')
 
+def editEmployeeJobRequirement(request):
+    return render(request, 'frontend/edit-employee-job-requirement.html')
+
+def updateTraining(request):
+    return render(request, 'frontend/update-training.html')
+
+def updateTrainer(request):
+    return render(request, 'frontend/update-trainer.html')
+
+def updateTopic(request):
+    return render(request, 'frontend/update-topic.html')
+
+def createNewDevelopmentGoal(request):
+    return render(request, 'frontend/create-new-development-goal.html')
+
+def updateDevelopmentGoal(request):
+    return render(request, 'frontend/update-development-goal.html')
+
+def addCommentDevelopmentGoal(request):
+    return render(request, 'frontend/add-comment-development-goal.html')
+
