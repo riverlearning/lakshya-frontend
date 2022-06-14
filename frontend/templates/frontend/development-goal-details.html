@@ -1,0 +1,45 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Comments</h4>
+            </div>
+            <div class="card-content">
+                <div class="card-body">
+                    <!-- table hover -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Comment</th>
+                                    <th>Date</th>
+                                    <th>By</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>In process</td>
+                                    <td>May 15,2021</td>
+                                    <td>John Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluation done</td>
+                                    <td>May 17,2021</td>
+                                    <td>John Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>Appraisal cycle closed</td>
+                                    <td>May 21,2021</td>
+                                    <td>John Doe</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -78,4 +78,7 @@ urlpatterns = [
     path('create-new-development-goal', views.createNewDevelopmentGoal, name="createNewDevelopmentGoal"),
     path('update-development-goal', views.updateDevelopmentGoal, name="updateDevelopmentGoal"),
     path('add-comment-development-goal', views.addCommentDevelopmentGoal, name="addCommentDevelopmentGoal"),
+    path('development-goal-details', views.developmentGoalDetails, name="developmentGoalDetails"),
+    path('my-profile', views.myProfile, name="myProfile"),
+    path('change-password', views.changePassword, name="changePassword"),
 ]

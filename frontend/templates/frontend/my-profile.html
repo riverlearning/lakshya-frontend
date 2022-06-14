@@ -1,0 +1,198 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<div class="page-heading">
+    <h3>My Profile</h3>
+</div>
+    <div class="row match-height">
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body py-4 px-5">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar avatar-xl">
+                            <img src="{% static 'images/faces/2.jpg' %}" alt="Face 2">
+                        </div>
+                        <div class="ms-3 name">
+                            <h5 class="font-bold">John Duck</h5>
+                            <h6 class="text-muted mb-0">johnduck@email.com</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body px-3 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stats-icon green">
+                                <i class="iconly-boldCall"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h6 class="text-muted font-semibold">Phone</h6>
+                            <h6 class="font-extrabold mb-0">+91-9876543210</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body px-3 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stats-icon blue">
+                                <i class="iconly-boldWork"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h6 class="text-muted font-semibold">Department</h6>
+                            <h6 class="font-extrabold mb-0">HR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body px-3 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stats-icon red">
+                                <i class="iconly-boldShow"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h6 class="text-muted font-semibold">Role</h6>
+                            <h6 class="font-extrabold mb-0">HR Manager</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body px-3 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stats-icon purple">
+                                <i class="iconly-boldStar"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h6 class="text-muted font-semibold">Grade</h6>
+                            <h6 class="font-extrabold mb-0">HR Manager</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body px-3 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stats-icon green">
+                                <i class="iconly-boldDownload"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h6 class="text-muted font-semibold">Salary</h6>
+                            <h6 class="font-extrabold mb-0">HR Manager</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-9">
+            <div class="card">
+                <div class="card-body px-3 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stats-icon brown">
+                                <i class="iconly-boldProfile"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h6 class="text-muted font-semibold">Manager</h6>
+                            <h6 class="font-extrabold mb-0">HR Manager</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Job Requirements (KRA)</h4>
+        </div>
+        <div class="card-content">
+            <div class="card-body">
+                <!-- table hover -->
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Job Requirements (KRA)</th>
+                                <th>Skill Area</th>
+                                <th>Weightage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Analytical Ability</td>
+                                <td>Behavioural</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Communication</td>
+                                <td>Behavioural</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Lead Generation</td>
+                                <td>Technical</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">KPIs</h4>
+        </div>
+        <div class="card-content">
+            <div class="card-body">
+                <!-- table hover -->
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>KPI</th>
+                                <th>UOM</th>
+                                <th>Direction</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Employee Satisfaction Rating</td>
+                                <td>Numbers</td>
+                                <td>Increase</td>
+                            </tr>
+                            <tr>
+                                <td>Fixing Bugs in Production</td>
+                                <td>Numbers</td>
+                                <td>Decrease</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -226,3 +226,12 @@ def updateDevelopmentGoal(request):
 def addCommentDevelopmentGoal(request):
     return render(request, 'frontend/add-comment-development-goal.html')
 
+def developmentGoalDetails(request):
+    return render(request, 'frontend/development-goal-details.html')
+
+def myProfile(request):
+    return render(request, 'frontend/my-profile.html')
+
+def changePassword(request):
+    return render(request, 'frontend/change-password.html')
+
