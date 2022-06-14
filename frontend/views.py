@@ -199,3 +199,9 @@ def editJobRequirement(request):
 def addJobRequirement(request):
     return render(request, 'frontend/add-job-requirement.html')
 
+def enroll(request):
+    return render(request, 'frontend/enroll.html')
+
+def trainingFeedback(request):
+    return render(request, 'frontend/training-feedback.html')
+

@@ -69,4 +69,6 @@ urlpatterns = [
     path('appraisal-details', views.appraisalDetails, name="appraisalDetails"),
     path('edit-job-requirement', views.editJobRequirement, name="editJobRequirement"),
     path('add-job-requirement', views.addJobRequirement, name="addJobRequirement"),
+    path('enroll', views.enroll, name="enroll"),
+    path('training-feedback', views.trainingFeedback, name="trainingFeedback"),
 ]
