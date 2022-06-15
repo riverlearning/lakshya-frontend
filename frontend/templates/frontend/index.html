@@ -26,7 +26,7 @@
             <div class="sidebar-wrapper active">
                 <div class="d-flex justify-content-between">
                     <div class="logo">
-                        <a href="{% url 'index' %}"><img src="{% static 'images/logo/lakshya-logo-1.png' %}" alt="Logo" width="80%" srcset=""></a>
+                        <a href="{% url 'task' %}"><img src="{% static 'images/logo/lakshya-logo-1.png' %}" alt="Logo" width="80%" srcset=""></a>
                     </div>
                     <div class="toggler">
                         <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -217,14 +217,10 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item dropdown me-3">
-                                    <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
+                                    <a class="button">
+                                        <a href="#" class="btn btn-success rounded-pill" 
+                                        data-bs-toggle="modal" data-bs-target="#inlineForm">iFeel
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                        <li><a href="#" class="dropdown-item" data-bs-toggle="modal"
-                                            data-bs-target="#inlineForm">iFeel</a></li>
-                                    </ul>
                                 </li>
                                 <!--login form Modal -->
                                 <div class="modal fade text-left" id="inlineForm" tabindex="-1" role="dialog"
