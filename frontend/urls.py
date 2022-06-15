@@ -84,4 +84,8 @@ urlpatterns = [
     path('kpi-data-view-edit', views.kpiDataViewEdit, name="kpiDataViewEdit"),
     path('kpi-data-add-new-target', views.kpiDataAddNewTarget, name="kpiDataAddNewTarget"),
     path('strategic-goals-report', views.strategicGoalsReport, name="strategicGoalsReport"),
+    path('login', views.login, name="login"),
+    path('signup', views.signup, name="signup"),
+    path('forgot-password', views.forgotPassword, name="forgotPassword"),
+    path('logout', views.logout, name="logout"),
 ]

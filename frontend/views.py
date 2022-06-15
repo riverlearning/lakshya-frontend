@@ -244,3 +244,15 @@ def kpiDataAddNewTarget(request):
 def strategicGoalsReport(request):
     return render(request, 'frontend/strategic-goals-report.html')
 
+def login(request):
+    return render(request, 'frontend/login.html')
+
+def signup(request):
+    return render(request, 'frontend/signup.html')
+
+def forgotPassword(request):
+    return render(request, 'frontend/forgot-password.html')
+
+def logout(request):
+    return render(request, 'frontend/logout.html')
+
