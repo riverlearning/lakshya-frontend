@@ -235,3 +235,9 @@ def myProfile(request):
 def changePassword(request):
     return render(request, 'frontend/change-password.html')
 
+def kpiDataViewEdit(request):
+    return render(request, 'frontend/kpi-data-view-edit.html')
+
+def kpiDataAddNewTarget(request):
+    return render(request, 'frontend/kpi-data-add-new-target.html')
+

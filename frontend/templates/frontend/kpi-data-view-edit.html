@@ -1,0 +1,30 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">KPI Data</h4>
+                    <h6 card="card-subtitle">KPI Name (2022-23)</h6>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <a href="{% url 'kpiDataAddNewTarget' %}" class="btn btn-success me-1 mb-1">Add New Target</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}
