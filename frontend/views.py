@@ -241,3 +241,6 @@ def kpiDataViewEdit(request):
 def kpiDataAddNewTarget(request):
     return render(request, 'frontend/kpi-data-add-new-target.html')
 
+def strategicGoalsReport(request):
+    return render(request, 'frontend/strategic-goals-report.html')
+

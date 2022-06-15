@@ -83,4 +83,5 @@ urlpatterns = [
     path('change-password', views.changePassword, name="changePassword"),
     path('kpi-data-view-edit', views.kpiDataViewEdit, name="kpiDataViewEdit"),
     path('kpi-data-add-new-target', views.kpiDataAddNewTarget, name="kpiDataAddNewTarget"),
+    path('strategic-goals-report', views.strategicGoalsReport, name="strategicGoalsReport"),
 ]
