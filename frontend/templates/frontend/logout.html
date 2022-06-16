@@ -26,9 +26,9 @@
         <div id="auth-left">
             <img src="{% static 'images/logo/lakshya-logo.png' %}" alt="Logo" width="40%"></a>
             <h1 class="auth-title"> </h1>
-            <h4 class="auth-subtitle">You have been logged out successfully.</h4>
-            <div class="col-lg-12 d-flex justify-content-end py-3">
-                <a href="{% url 'login' %}" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Login again</a>
+            <div class="alert alert-light-success color-success">You have been logged out successfully.<p>Thank you!</p></div>
+            <div class="buttons">
+                <a href="{% url 'login' %}" class="btn btn-primary btn-block shadow">Login again</a>
             </div>
         </div>
     </div>
