@@ -256,3 +256,18 @@ def forgotPassword(request):
 def logout(request):
     return render(request, 'frontend/logout.html')
 
+def iSuggest(request):
+    return render(request, 'frontend/isuggest.html')
+
+def trainingNeed(request):
+    return render(request, 'frontend/training-need.html')
+
+def createTrainingNeed(request):
+    return render(request, 'frontend/create-training-need.html')
+
+def trainingNeedReport(request):
+    return render(request, 'frontend/training-need-report.html')
+
+def quickSuggestion(request):
+    return render(request, 'frontend/quick-suggestion.html')
+

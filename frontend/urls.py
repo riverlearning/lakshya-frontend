@@ -88,4 +88,9 @@ urlpatterns = [
     path('signup', views.signup, name="signup"),
     path('forgot-password', views.forgotPassword, name="forgotPassword"),
     path('logout', views.logout, name="logout"),
+    path('isuggest', views.iSuggest, name="iSuggest"),
+    path('training-need', views.trainingNeed, name="trainingNeed"),
+    path('create-training-need', views.createTrainingNeed, name="createTrainingNeed"),
+    path('training-need-report', views.trainingNeedReport, name="trainingNeedReport"),
+    path('quick-suggestion', views.quickSuggestion, name="quickSuggestion"),
 ]

@@ -1,0 +1,75 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Create Training Need</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">Need</label>
+                                        <input type="text" id="first-name-column" class="form-control"
+                                            placeholder="" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Set For</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>John Doe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city-column">Set By</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>Shyam Rathod</option>
+                                            <option>John Doe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-column">Date</label>
+                                        <input type="date" id="date-column" class="form-control"
+                                            placeholder="dd-mm-yyy" name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Status</label>
+                                        <select class="form-select" id="basicSelect">
+                                            <option>---</option>
+                                            <option>OPEN</option>
+                                            <option>CLOSED</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    <button type="cancel" class="btn btn-light me-1 mb-1">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

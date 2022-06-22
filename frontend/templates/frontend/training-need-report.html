@@ -1,0 +1,41 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Training Need Report</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- table hover -->
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Name Of The Person</th>
+                                        <th style="width:500px">Training Need</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <tr>
+                                        <td class="text-bold-500">John Doe</td>
+                                        <td>Software installations</td>
+                                        <td><span class="badge bg-warning">OPEN</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-500">Jenny Thomas</td>
+                                        <td>testing the app and the new components</td>
+                                        <td><span class="badge bg-success">CLOSED</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

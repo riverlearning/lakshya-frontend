@@ -1,0 +1,93 @@
+{% extends 'frontend/index.html' %}
+{% load static %}
+
+{% block content%}
+        <div class="col-12 col-md-12">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end py-3">
+                    <a href="{% url 'createTrainingNeed' %}" class="btn btn-primary">Create Training Need</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Training Need</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- table hover -->
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width:400px">Training Need</th>
+                                        <th>Set For</th>
+                                        <th>Set By</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <tr>
+                                        <td>Software installations</td>
+                                        <td class="text-bold-500">John Doe</td>
+                                        <td class="text-bold-500">Shyam Rathod</td>
+                                        <td class="text-bold-500">May 23, 2022</td>
+                                        <td><span class="badge bg-warning">OPEN</span></td>
+                                        <td>
+                                            <a href="{% url 'addComment' %}" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                        <!--Danger theme Modal -->
+                                        <div class="modal fade text-left" id="danger" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"
+                                            role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger">
+                                                    <h5 class="modal-title white" id="myModalLabel120">Are you sure you want to delete?
+                                                    </h5>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <i data-feather="x"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-light-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                        <span class="d-none d-sm-block">No</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger ml-1"
+                                                        data-bs-dismiss="modal">
+                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                        <span class="d-none d-sm-block">Yes</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <td>testing the app and the new components</td>
+                                        <td class="text-bold-500">Jenny Thomas</td>
+                                        <td class="text-bold-500">Abhishek Borse</td>
+                                        <td class="text-bold-500">May 29, 2022</td>
+                                        <td><span class="badge bg-success">CLOSED</span></td>
+                                        <td>
+                                            <a href="#" class="badge bg-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Edit"><i class="bi bi-pen"></i></a>
+                                            <a href="#" class="badge bg-danger" data-bs-placement="right" title="Delete" 
+                                            data-bs-toggle="modal" data-bs-target="#danger"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
